@@ -13,11 +13,7 @@ function playRound(playerSelection, computerSelection) {
     computerSelection = getComputerChoice();
     
     // Draw
-    if ((playerSelection === "rock") && (computerSelection === "rock")) {
-        return console.log("Draw") + console.log(`Player: ${playerSelection} \nComputer: ${computerSelection}`);
-    } else if ((playerSelection === "paper") && (computerSelection === "paper")) {
-        return console.log("Draw") + console.log(`Player: ${playerSelection} \nComputer: ${computerSelection}`);
-    } else if ((playerSelection === "scissors") && (computerSelection === "scissors")) {
+    if (((playerSelection === "rock") && (computerSelection === "rock")) || ((playerSelection === "paper") && (computerSelection === "paper")) || ((playerSelection === "scissors") && (computerSelection === "scissors"))) {
         return console.log("Draw") + console.log(`Player: ${playerSelection} \nComputer: ${computerSelection}`);
     }
 
