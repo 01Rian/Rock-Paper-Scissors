@@ -54,3 +54,15 @@ function playRound() {
 
     score.innerHTML = playerScore + ":" + computerScore;
 }
+
+function newGame() {
+    score.innerHTML = "0:0";
+    playerScore = 0;
+    computerScore = 0;
+    reset();
+    main.classList.remove('none');
+    winner.classList.remove('center');
+    winner.classList.add('none');
+    loser.classList.remove('center');
+    loser.classList.add('none');
+}
