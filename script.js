@@ -6,6 +6,12 @@ const winner = document.querySelector('#winner');
 const loser = document.querySelector('#loser');
 const main = document.querySelector('#main');
 
+function reset() {
+    player1 = document.querySelector('input[name="play"]:checked').value;
+    imgUser.innerHTML = "<img src='assets/images/" + player1 + ".png'>";
+    imgPc.innerHTML = "";
+} 
+
 function getComputerChoice() {
     const option = ['rock', 'paper', 'scissor'];
     let options = option[Math.floor((Math.random() * option.length))];
