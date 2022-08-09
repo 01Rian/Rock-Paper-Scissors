@@ -19,6 +19,30 @@
                     0:0
                 </div>
             </div>
+            <div class="block bg-grey selected-image">
+                <div id="user">
+                    <img src="./assets/images/rock.png" alt="rock">
+                </div>
+                <div id="pc" class="reverse"></div>
+            </div>
+            <h2>make your choice</h2>
+            <div class="buttons">
+                <label>
+                    <input type="radio" onclick="reset()" name="play" value="rock" checked>
+                    <button class="btn"><img src="./assets/images/rock.png" alt="rock"></button>
+                </label>
+                <label>
+                    <input type="radio" onclick="reset()" name="play" value="paper">
+                    <button class="btn"><img src="./assets/images/paper.png" alt="paper"></button>
+                </label>
+                <label>
+                    <input type="radio" onclick="reset()" name="play" value="scissor">
+                    <button class="btn"><img src="./assets/images/scissor.png" alt="scissor"></button>
+                </label>
+            </div>
+            <div class="btn-playing">
+                <button id="playing" class="btn-play">Play</button>
+            </div>
         </div>
     </div>
 </body>
