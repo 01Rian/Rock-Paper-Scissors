@@ -72,3 +72,26 @@ h2 {
     background-color: rgb(169, 14, 14);
     right: 41.5%;
 }
+
+.block {
+    display: flex;
+}
+
+.bg-grey {
+    background-color: #c0c0c0;
+    height: 220px;
+}
+
+.selected-image div {
+    width: 65%;
+    text-align: center;
+}
+
+.selected-image div img {
+    margin-top: 25px;
+    max-height: 70%;
+}
+
+.reverse {
+    transform: scaleX(-1);
+}
