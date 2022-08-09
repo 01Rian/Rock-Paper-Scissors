@@ -13,8 +13,8 @@ let playerScore = 0;
 let computerScore = 0;
 
 playing.addEventListener('click', () => {
-    reset()
-    getComputerChoice()
+    reset();
+    getComputerChoice();
 });
 
 function reset() {
@@ -28,5 +28,29 @@ function getComputerChoice() {
     let options = option[Math.floor((Math.random() * option.length))];
     player2 = options;
     imgPc.innerHTML = "<img src='assets/images/" + player2 + ".png'>";
-    playRound()
+    playRound();
+}
+
+function playRound() {
+    if (player1 === player2) {
+
+    } else if (player1 === 'rock') {
+        player2 === 'scissor' ? playerScore++ : computerScore++; 
+    } else if (player1 === 'paper') {
+        player2 === 'rock' ? playerScore++ : computerScore++;
+    } else if (player1 === 'scissor') {
+        player2 === 'paper' ? playerScore++ : computerScore++;
+    }
+
+    if (playerScore === 5 && computerScore < 5) {
+        main.classList.add('none');
+        winner.classList.remove('none');
+        winner.classList.add('center');
+    } else if (computerScore === 5 && playerScore < 5) {
+        main.classList.add('none');
+        loser.classList.remove('none');
+        loser.classList.add('center');
+    }
+
+    score.innerHTML = playerScore + ":" + computerScore;
 }
