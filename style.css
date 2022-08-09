@@ -127,3 +127,26 @@ input {
     border-radius: 50%;
     cursor: pointer;
 }
+
+.btn-playing {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playing {
+    font-weight: 800;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    border: 3px solid #3882F6;
+    padding: 10px 90px;
+    margin: 15px 0;
+    border-radius: 10px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+#playing:hover {
+    background-color: #3882F6;
+    color: #fff;
+}
